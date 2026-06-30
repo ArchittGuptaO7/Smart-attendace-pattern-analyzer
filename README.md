@@ -8,9 +8,9 @@ By simulating academic schedules, exam periods, holidays, and student behavior, 
 
 ## 🚀 Live Demo
 
-> **Live Application:** *Coming Soon*
 
-**🔗 Live Demo:** https://your-live-demo-link.com
+
+**🔗 Live Demo:** [https://your-live-demo-link.com](https://archittguptao7.github.io/Smart-attendace-pattern-analyzer/)
 
 ---
 
