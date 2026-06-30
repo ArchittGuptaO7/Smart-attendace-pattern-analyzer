@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Smart Attendance Pattern Analyzer is a machine learning and data analytics project for attendance trends, behavior analysis, statistical validation, and dashboard insights."
+    />
+    <title>Smart Attendance Pattern Analyzer | AI Attendance Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-label="Loading">
+      <div class="loader-orbit"></div>
+      <span>Initializing analytics</span>
+    </div>
+
+    <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Smart Attendance Pattern Analyzer home">
+        <span class="brand-mark"><i class="fa-solid fa-chart-simple"></i></span>
+        <span>Smart Attendance</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#gallery">Insights</a>
+        <a href="#future">Roadmap</a>
+      </nav>
+      <a class="header-cta" href="https://github.com/ArchittGuptaO7/Smart-attendance-pattern-analyzer" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-github"></i>
+        Repository
+      </a>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="grid-bg" aria-hidden="true"></div>
+        <div class="particle-field" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="blob blob-one" aria-hidden="true"></div>
+        <div class="blob blob-two" aria-hidden="true"></div>
+
+        <div class="hero-content" data-aos="fade-up">
+          <p class="eyebrow"><i class="fa-solid fa-wand-magic-sparkles"></i> ML powered attendance intelligence</p>
+          <h1>Smart Attendance Pattern Analyzer</h1>
+          <p class="hero-subtitle">
+            A Machine Learning and Data Analytics platform for discovering attendance trends, behavioral patterns and academic insights.
+          </p>
+          <div class="typing-line" aria-label="Project focus">
+            <span id="typedText"></span><span class="typing-caret"></span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#dashboard">
+              <i class="fa-solid fa-play"></i>
+              Live Demo
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/ArchittGuptaO7/Smart-attendance-pattern-analyzer" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i>
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-dashboard glass-card" data-aos="zoom-in" data-aos-delay="160" aria-label="Analytics snapshot">
+          <div class="dashboard-topline">
+            <div>
+              <span class="status-dot"></span>
+              <strong>Attendance Intelligence Console</strong>
+            </div>
+            <span class="mono">LIVE</span>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <span>Avg Attendance</span>
+              <strong>82.4%</strong>
+            </div>
+            <div>
+              <span>Risk Cohort</span>
+              <strong>14</strong>
+            </div>
+            <div>
+              <span>Signals</span>
+              <strong>25+</strong>
+            </div>
+          </div>
+          <div class="mini-chart" aria-hidden="true">
+            <span style="height: 42%"></span>
+            <span style="height: 68%"></span>
+            <span style="height: 50%"></span>
+            <span style="height: 78%"></span>
+            <span style="height: 63%"></span>
+            <span style="height: 88%"></span>
+            <span style="height: 72%"></span>
+          </div>
+          <div class="signal-list">
+            <div><i class="fa-solid fa-circle-check"></i> Exam-period variance detected</div>
+            <div><i class="fa-solid fa-network-wired"></i> Co-absence clusters mapped</div>
+            <div><i class="fa-solid fa-chart-line"></i> Weekday trend confidence high</div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-shell about" id="about">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">About Project</p>
+          <h2>Built to reveal why attendance changes, not just how much.</h2>
+          <p>
+            The project simulates realistic academic schedules, exam windows, holidays and student behavior to identify the contextual
+            factors that influence classroom participation.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="info-card glass-card" data-aos="fade-up">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h3>Why it matters</h3>
+            <p>Attendance often reflects stress, scheduling friction and social behavior before it becomes an academic performance problem.</p>
+          </article>
+          <article class="info-card glass-card" data-aos="fade-up" data-aos-delay="80">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3>Problem statement</h3>
+            <p>Raw attendance logs hide patterns across weekdays, courses, exams, holidays and groups of students.</p>
+          </article>
+          <article class="info-card glass-card" data-aos="fade-up" data-aos-delay="160">
+            <i class="fa-solid fa-route"></i>
+            <h3>Objectives</h3>
+            <p>Clean data, engineer signals, validate trends statistically and convert analysis into recruiter-ready visual insights.</p>
+          </article>
+          <article class="info-card glass-card" data-aos="fade-up" data-aos-delay="240">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Expected outcomes</h3>
+            <p>Actionable dashboards for policy evaluation, counseling, course comparison and early risk detection.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="features">
+        <div class="section-heading compact" data-aos="fade-up">
+          <p class="eyebrow">Features</p>
+          <h2>Analytics modules that feel production-ready.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card glass-card" data-aos="zoom-in"><i class="fa-solid fa-chart-area"></i><h3>Attendance Analytics</h3><p>Analyze attendance percentages, absenteeism patterns and semester trends.</p></article>
+          <article class="feature-card glass-card" data-aos="zoom-in" data-aos-delay="60"><i class="fa-solid fa-table-cells-large"></i><h3>Attendance Heatmaps</h3><p>Spot high and low participation windows across subjects and weekdays.</p></article>
+          <article class="feature-card glass-card" data-aos="zoom-in" data-aos-delay="120"><i class="fa-solid fa-users-viewfinder"></i><h3>Student Behaviour Analysis</h3><p>Identify frequent bunking behavior and contextual participation changes.</p></article>
+          <article class="feature-card glass-card" data-aos="zoom-in" data-aos-delay="180"><i class="fa-solid fa-square-root-variable"></i><h3>Statistical Analysis</h3><p>Use Chi-Square, ANOVA, descriptive statistics and correlation analysis.</p></article>
+          <article class="feature-card glass-card" data-aos="zoom-in" data-aos-delay="240"><i class="fa-solid fa-diagram-project"></i><h3>Network Graph Analysis</h3><p>Reveal co-absence relationships and attendance communities.</p></article>
+          <article class="feature-card glass-card" data-aos="zoom-in" data-aos-delay="300"><i class="fa-solid fa-wave-square"></i><h3>Trend Detection</h3><p>Track presence shifts before exams, after holidays and across courses.</p></article>
+        </div>
+      </section>
+
+      <section class="section-shell workflow" id="workflow">
+        <div class="section-heading compact" data-aos="fade-up">
+          <p class="eyebrow">Workflow</p>
+          <h2>From raw records to decision-ready insight.</h2>
+        </div>
+        <div class="timeline">
+          <article data-aos="slide-right"><i class="fa-solid fa-database"></i><span>Dataset</span></article>
+          <article data-aos="slide-right" data-aos-delay="60"><i class="fa-solid fa-broom"></i><span>Data Cleaning</span></article>
+          <article data-aos="slide-right" data-aos-delay="120"><i class="fa-solid fa-magnifying-glass-chart"></i><span>EDA</span></article>
+          <article data-aos="slide-left" data-aos-delay="180"><i class="fa-solid fa-flask"></i><span>Statistical Analysis</span></article>
+          <article data-aos="slide-left" data-aos-delay="240"><i class="fa-solid fa-chart-pie"></i><span>Visualization</span></article>
+          <article data-aos="slide-left" data-aos-delay="300"><i class="fa-solid fa-lightbulb"></i><span>Insights</span></article>
+          <article data-aos="slide-left" data-aos-delay="360"><i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></article>
+        </div>
+      </section>
+
+      <section class="section-shell analytics-section" id="dashboard">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">Interactive Analytics Dashboard</p>
+          <h2>The main attraction: live dashboard widgets with sample attendance data.</h2>
+          <p>Built with Chart.js to demonstrate how the notebook insights can translate into an executive analytics layer.</p>
+        </div>
+
+        <div class="summary-grid">
+          <article class="summary-card glass-card" data-aos="fade-up"><span>Average Attendance</span><strong data-count="82.4" data-suffix="%">0%</strong><small>+6.2% vs previous month</small></article>
+          <article class="summary-card glass-card" data-aos="fade-up" data-aos-delay="70"><span>Highest Attendance</span><strong data-count="96" data-suffix="%">0%</strong><small>Machine Learning cohort</small></article>
+          <article class="summary-card glass-card" data-aos="fade-up" data-aos-delay="140"><span>Lowest Attendance</span><strong data-count="58" data-suffix="%">0%</strong><small>Friday afternoon lab</small></article>
+          <article class="summary-card glass-card" data-aos="fade-up" data-aos-delay="210"><span>Missing Rate</span><strong data-count="17.6" data-suffix="%">0%</strong><small>Needs intervention tracking</small></article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="chart-card glass-card gauge-card" data-aos="zoom-in">
+            <div class="card-heading"><h3>Attendance Percentage Gauge</h3><span>Target 75%</span></div>
+            <canvas id="gaugeChart" aria-label="Attendance percentage gauge"></canvas>
+            <strong class="gauge-label">82.4%</strong>
+          </article>
+          <article class="chart-card glass-card wide" data-aos="fade-up">
+            <div class="card-heading"><h3>Weekly Attendance Line Chart</h3><span>Semester timeline</span></div>
+            <canvas id="weeklyChart" aria-label="Weekly attendance line chart"></canvas>
+          </article>
+          <article class="chart-card glass-card" data-aos="fade-up">
+            <div class="card-heading"><h3>Course Comparison</h3><span>Attendance %</span></div>
+            <canvas id="courseChart" aria-label="Course comparison bar chart"></canvas>
+          </article>
+          <article class="chart-card glass-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="card-heading"><h3>Distribution</h3><span>Presence split</span></div>
+            <canvas id="distributionChart" aria-label="Attendance distribution doughnut chart"></canvas>
+          </article>
+          <article class="chart-card glass-card wide" data-aos="fade-up" data-aos-delay="120">
+            <div class="card-heading"><h3>Student Presence Trend</h3><span>Observed vs expected</span></div>
+            <canvas id="presenceChart" aria-label="Student presence trend chart"></canvas>
+          </article>
+          <article class="chart-card glass-card heatmap-card" data-aos="zoom-in" data-aos-delay="160">
+            <div class="card-heading"><h3>Heatmap Style Grid</h3><span>Weekday intensity</span></div>
+            <div class="heatmap" id="heatmap" aria-label="Attendance heatmap"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell tech-section" id="tech">
+        <div class="section-heading compact" data-aos="fade-up">
+          <p class="eyebrow">Technologies Used</p>
+          <h2>Data science stack behind the analysis.</h2>
+        </div>
+        <div class="tech-cloud" data-aos="fade-up">
+          <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>SciPy</span><span>NetworkX</span><span>Jupyter Notebook</span><span>Machine Learning</span><span>Data Analytics</span>
+        </div>
+      </section>
+
+      <section class="section-shell" id="gallery">
+        <div class="section-heading compact" data-aos="fade-up">
+          <p class="eyebrow">Visual Insights Gallery</p>
+          <h2>Portfolio-ready visual outputs for the repository.</h2>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-card" type="button" data-insight="heatmap" data-aos="zoom-in">
+            <div class="insight-art heat"></div><h3>Attendance Heatmaps</h3><span>Open preview</span>
+          </button>
+          <button class="gallery-card" type="button" data-insight="correlation" data-aos="zoom-in" data-aos-delay="70">
+            <div class="insight-art matrix"></div><h3>Correlation Matrix</h3><span>Open preview</span>
+          </button>
+          <button class="gallery-card" type="button" data-insight="trend" data-aos="zoom-in" data-aos-delay="140">
+            <div class="insight-art trend"></div><h3>Attendance Trend</h3><span>Open preview</span>
+          </button>
+          <button class="gallery-card" type="button" data-insight="network" data-aos="zoom-in" data-aos-delay="210">
+            <div class="insight-art network"></div><h3>Network Graph</h3><span>Open preview</span>
+          </button>
+          <button class="gallery-card" type="button" data-insight="distribution" data-aos="zoom-in" data-aos-delay="280">
+            <div class="insight-art distribution"></div><h3>Distribution Plot</h3><span>Open preview</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-shell future" id="future">
+        <div class="section-heading compact" data-aos="fade-up">
+          <p class="eyebrow">Future Improvements</p>
+          <h2>Roadmap from notebook analysis to complete analytics platform.</h2>
+        </div>
+        <div class="roadmap-grid">
+          <article data-aos="fade-up"><i class="fa-solid fa-tv"></i><span>Real-time Dashboard</span></article>
+          <article data-aos="fade-up" data-aos-delay="60"><i class="fa-solid fa-brain"></i><span>Prediction Models</span></article>
+          <article data-aos="fade-up" data-aos-delay="120"><i class="fa-solid fa-triangle-exclamation"></i><span>Risk Detection</span></article>
+          <article data-aos="fade-up" data-aos-delay="180"><i class="fa-solid fa-rocket"></i><span>Streamlit Deployment</span></article>
+          <article data-aos="fade-up" data-aos-delay="240"><i class="fa-solid fa-cloud"></i><span>Cloud Database</span></article>
+          <article data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-chalkboard-user"></i><span>Faculty Portal</span></article>
+          <article data-aos="fade-up" data-aos-delay="360"><i class="fa-solid fa-user"></i><span>Student Portal</span></article>
+        </div>
+      </section>
+
+      <section class="section-shell project-stats">
+        <div class="stat-strip glass-card" data-aos="fade-up">
+          <div><strong data-count="1000" data-suffix="+">0</strong><span>Attendance Records</span></div>
+          <div><strong data-count="25" data-suffix="+">0</strong><span>Features</span></div>
+          <div><strong data-count="10" data-suffix="+">0</strong><span>Visualizations</span></div>
+          <div><strong data-count="5">0</strong><span>Statistical Tests</span></div>
+          <div><strong data-count="100" data-suffix="%">0%</strong><span>Python</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Smart Attendance Pattern Analyzer</strong>
+        <span>Copyright 2026 Archit Gupta. All rights reserved.</span>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/ArchittGuptaO7" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:architgupta@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <dialog class="insight-modal" id="insightModal" aria-labelledby="insightTitle">
+      <div class="modal-panel glass-card">
+        <button class="modal-close" id="closeInsight" type="button" aria-label="Close insight preview">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-copy">
+          <p class="eyebrow" id="insightKicker">Visual Insight</p>
+          <h2 id="insightTitle">Attendance Insight</h2>
+          <p id="insightDescription"></p>
+        </div>
+        <div class="modal-visual" id="insightVisual" aria-hidden="true"></div>
+        <div class="modal-metrics" id="insightMetrics"></div>
+      </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
